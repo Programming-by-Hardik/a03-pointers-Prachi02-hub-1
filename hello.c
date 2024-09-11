@@ -54,19 +54,18 @@ int temp = *a;
 
 
 
-
 }
 
 // Function to find the maximum value in an array using pointers
 int findMax(int *arr, int length) {
     //Write the fucntion description 
-int max = *arr;
-  for (int i = 1;i < length; i++) {
-    if (*(arr + i) > max) {
-        max = *(arr+i);
+ int max = *arr;
+  for (int i = 1; i < length; i++) {
+    if (*(arr + i) > max) { 
+       max = *(arr + i);
     }
-}
-return max;
+  } 
+  return max;
 
 
 
