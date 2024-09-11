@@ -46,8 +46,10 @@ int main() {
 void swap(int *a, int *b) {
     //Write the function description
 int temp = *a;
-  *a = *b;
-  *b = temp;
+    *a = *b;
+    *b = temp;
+
+
 
 
 
@@ -60,12 +62,12 @@ int temp = *a;
 int findMax(int *arr, int length) {
     //Write the fucntion description 
  int max = *arr;
-  for (int i = 1; i < length; i++) {
-    if (*(arr + i) > max) { 
-       max = *(arr + i);
+    for (int i = 1; i < length; i++) {
+        if (*(arr + i) > max) {
+            max = *(arr + i);
+        }
     }
-  } 
-  return max;
+    return max;
 
 
 
@@ -79,15 +81,16 @@ int findMax(int *arr, int length) {
 // Function to reverse an array using pointers
 void reverseArray(int *arr, int length) {
     //Write the function description 
-int *start = arr;
-  int *end = arr + length - 1;
-  while (start < end) {
-   int temp = *start;
-   *start = *end;
-   *end = temp;
-   start++;
-   end--;
-}
+ int *start = arr;
+    int *end = arr + length - 1;
+    while (start < end) {
+        int temp = *start;
+        *start = *end;
+        *end = temp;
+        start++;
+        end--;
+    }
+
 
 
 
